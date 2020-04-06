@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalisation</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript">
+        $(document).ready(function () { //user clicks button
+            if ("geolocation" in navigator) { //check geolocation available 
+                //try to get user current location using getCurrentPosition() method
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    console.log(position.coords);
+                    $("#latitude").html(position.coords.latitude);
+                    $("#longitude").html(position.coords.longitude);
+                    $("#altitude").html(position.coords.altitude);
+                    $("#accuracy").html(position.coords.accuracy);
+                    $("#altitudeAccuracy").html(position.coords.altitudeAccuracy);
+                    $("#latitude").html(position.coords.latitude);
+                    $("#heading").html(position.coords.heading);
+                    $("#speed").html(position.coords.speed);
+                });
+            } else {
+                console.log("Le navigateur ne supporte pas la géolocalisation!");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Informations de localisations :</h1>
+    <p class="badge">Latitude : </p>
+    <div class="badge badge-info" id="latitude"></div><br />
+    <p class="badge">Longitude : </p>
+    <div class="badge badge-info" id="longitude"></div><br />
+    <p class="badge">Altitude : </p>
+    <div class="badge badge-info" id="altitude"></div><br />
+    <p class="badge">Accuracy : </p>
+    <div class="badge badge-info" id="accuracy"></div><br />
+    <p class="badge">Altitude Accuracy : </p>
+    <div class="badge badge-info" id="altitudeAccuracy"></div><br />
+    <p class="badge">Heading : </p>
+    <div class="badge badge-info" id="heading"></div><br />
+    <p class="badge">Speed : </p>
+    <div class="badge badge-info" id="speed"></div><br />
+</body>
+
+</html>
