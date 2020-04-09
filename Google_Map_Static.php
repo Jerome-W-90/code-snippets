@@ -37,8 +37,7 @@
     while($data = $retour->fetch()){
        $src =  'http://maps.googleapis.com/maps/api/staticmap?zoom=15&sensor=true&size=730x400&center='.$data['lat'].','.$data['long'].'&markers=color:red|'.$data['lat'].','.$data['long'].'&key='.$keyAPI.'';
        $destFolder = 'images/';
-       $cityName = strtolower(str_replace("---", "-", str_replace(" ", "-", $data['city'])));
-       $imgName = 'image-'.$cityName.'.png';
+       $imgName = 'image-'.$data['city'].'.png';
        $imgPath = $destFolder.$imgName;
        file_put_contents($imgPath, file_get_contents($src));
     }
