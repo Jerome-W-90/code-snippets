@@ -10,3 +10,4 @@ Ce script permet d'automatiser toute l'installation et la configuration sur un M
 - Installation de Homebrew et npm pour pouvoir installer des packages (comme Node, Yarn, MongoDB... etc.)
 - Installation de Homebrew Cask pour installer des applications (comme MAMP, Google Drive, Slack, Atom... etc.)
 - Mise en place de la configuration par défaut du Mac (comme afficher par défaut les fichiers cachés, désactiver la création des fichiers .DS_STORE... etc.)
+Pour lancer le script, ouvrir le terminal et tapez `bash config-new-mac.sh`
