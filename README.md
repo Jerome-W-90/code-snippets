@@ -5,7 +5,7 @@ Permet de générer automatiquement une liste d'images de Google Map avec des do
 ### geolocalisation.html
 Permet de récupérer les informations de localisations avec la fonction `getCurrentPosition()`. Il suffit simplement de lancer la page html.
 
-# Utilisation des scrips
+# Utilisation des scripts
 ### config-new-mac.sh 
 Ce script permet d'automatiser toute l'installation et la configuration sur un MacOS vierge, à savoir :
 - Installation de Homebrew et npm pour pouvoir installer des packages (comme Node, Yarn, MongoDB... etc.)
