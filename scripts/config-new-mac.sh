@@ -4,24 +4,24 @@
 #                     ETAPE 1 - INSTALLATION 
 # ***********************************************************
 
-## Installation de Homebrew via le script install.sh officiel
+## Installation de Homebrew via le script install.sh officiel et Homebrew Cask
 echo 'Installation de Homebrew pour installer les packages'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo 'Vérification installation de Homebrew'
-brew update 
+brew update
 
 echo 'Installation de Cask pour installer les applications'
 brew tap caskroom/cask
 
-## Installation des applications, packages...
+## Installation des applications et des packages...
 echo 'Installation des packages de base...'
-brew install node   
+brew install node
 brew install yarn
 brew install mongodb/brew/mongodb-community
 brew install git
 brew install npm
-brew install nano 
+brew install nano
 
 echo 'Installation de React Native (Developpement MacOS / Target Android ) et ses dépendances...'
 brew install react-native-cli
@@ -39,12 +39,18 @@ brew cask install visual-studio-code
 brew cask install sequel-pro
 brew cask install docker
 brew cask install robo-3t
+brew cask install postman
+brew cask install android-studio
 
 echo 'Installation des applications pour utilisation quotidienne...'
 brew cask install istat-menus
 brew cask install slack
 brew cask install 1password
 brew cask install google-backup-and-sync
+brew cask install malwarebytes
+brew cask install molotov
+brew cask install nordvpn
+brew cask install vlc
 
 echo 'Installation de React JS...'
 sudo npm install -g create-react-app
