@@ -21,4 +21,4 @@ Pour voir la liste des packages npm ainsi que leur nom : https://www.npmjs.com
 
 # Utilisation des little apps
 ### calculatrice.html
-Une calculette tout simple.
+Une calculette toute simple.
