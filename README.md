@@ -18,3 +18,7 @@ Pour voir la liste des `formulae` et des `cask` disponibles pour Homebrew ainsi 
 - Cask : https://formulae.brew.sh/cask/
 
 Pour voir la liste des packages npm ainsi que leur nom : https://www.npmjs.com
+
+# Utilisation des little apps
+### calculatrice.html
+Une calculette tout simple.
