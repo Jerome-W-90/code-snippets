@@ -13,8 +13,8 @@ Ce script permet d'automatiser toute l'installation et la configuration sur un M
 - Mise en place de la configuration par défaut du Mac (comme afficher par défaut les fichiers cachés, désactiver la création des fichiers .DS_STORE... etc.)
 Pour lancer le script, ouvrir le terminal et tapez `bash config-new-mac.sh`
 
-Avant de lancer le script :
-- Ligne 19 : supprimer les packages non voulus et ajouter les packages souhaités en vérifiant la disponibilité et le nom sur https://formulae.brew.sh/formula/ 
-- Ligne 24 : supprimer les applications non voulues et ajouter les applications souhaitées en vérifiant la disponibilité et le nom sur https://formulae.brew.sh/cask/
-- Ligne 29 : supprimer les packages npm non voulus et ajouter les packages npm voulus en vérifiant la disponibilité et le nom sur https://www.npmjs.com
-- Dans la partie CONFIGURATION, supprimer le(s) bloc(s) non souhaité(s)
+Pour voir la liste des `formulae` et des `cask` disponibles pour Homebrew ainsi que leur nom : 
+- Formulae : https://formulae.brew.sh/formula/ 
+- Cask : https://formulae.brew.sh/cask/
+
+Pour voir la liste des packages npm ainsi que leur nom : https://www.npmjs.com
