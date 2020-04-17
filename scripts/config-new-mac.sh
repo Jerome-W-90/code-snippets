@@ -41,6 +41,7 @@ brew cask install docker
 brew cask install robo-3t
 brew cask install postman
 brew cask install android-studio
+brew cask install poedit
 
 echo 'Installation des applications pour utilisation quotidienne...'
 brew cask install istat-menus
@@ -51,6 +52,12 @@ brew cask install malwarebytes
 brew cask install molotov
 brew cask install nordvpn
 brew cask install vlc
+brew cask install discord
+brew cask install macupdater
+brew cask install microsoft-word
+brew cask install microsoft-excel
+brew cask install microsoft-powerpoint
+brew cask install teamviewer
 
 echo 'Installation de React JS...'
 sudo npm install -g create-react-app
