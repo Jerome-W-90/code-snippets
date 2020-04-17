@@ -18,6 +18,7 @@ Pour voir la liste des `formulae` et des `cask` disponibles pour Homebrew ainsi 
 - Cask : https://formulae.brew.sh/cask/
 
 Pour voir la liste des packages npm ainsi que leur nom : https://www.npmjs.com
+
 Pour contribuer à l'open source et ajouter un cask : https://github.com/Homebrew/homebrew-cask/blob/master/doc/development/adding_a_cask.md
 
 # Utilisation des little apps
