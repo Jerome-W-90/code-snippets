@@ -9,7 +9,7 @@ Permet de récupérer les informations de localisations avec la fonction `getCur
 Permet de crypter un mot de passe pour éviter d'afficher le mot de passe en clair, comme dans la cadre d'un .htpasswd par exemple. Attention, la fonction crypt() produit un hash faible sans paramètre salt. Pour plus d'infos : https://www.php.net/manual/fr/function.crypt.php
 
 ### chemin_absolu.php
-Permet d'obtenir le chemin absolu d'où se trouve le fichier. Par exemple, mettre ce fichier dans le dossier htdocs de MAMP retournera : `Users/Example/Applications/MAMP/htdocs`.
+Permet d'obtenir le chemin absolu d'où se trouve le fichier. Par exemple, mettre ce fichier dans le dossier htdocs de MAMP retournera : `Users/Example/Applications/MAMP/htdocs`. Pour plus d'infos : https://www.php.net/manual/fr/function.getcwd.php
 
 # Utilisation des scripts
 ### config-new-mac.sh 
