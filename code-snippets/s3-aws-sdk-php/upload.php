@@ -24,14 +24,15 @@ $s3 = new Aws\S3\S3Client([
 
 
 // Formulaire d'envoi d'un fichier sur le bucket
-if(isset($_FILES['image'])){
+if(isset($_FILES['image']) && $_POST['access']){
     $file_name = $_FILES['image']['name'];
     $temp_file_location = $_FILES['image']['tmp_name'];
 
     $result = $s3->putObject([
         'Bucket' => $bucketName,
         'Key'    => $file_name,
-        'SourceFile' => $temp_file_location
+        'SourceFile' => $temp_file_location,
+        'ACL' => $_POST['access']
     ]);
 }
 
@@ -74,6 +75,10 @@ $listBuckets = $s3->listBuckets();
     <h3>Formulaire d'envoi d'un fichier sur le bucket <span style="color:#ff0000;"><?php echo $bucketName; ?></span></h3>
     <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
         <input type="file" name="image" />
+        <select name="access" id="access">
+            <option value="private">Privé (par défault)</option>
+            <option value="public-read">Public</option>
+        </select>
         <input type="submit" value="Envoyer"/>
     </form>
 
