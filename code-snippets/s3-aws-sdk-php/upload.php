@@ -1,8 +1,6 @@
 <?php
 /**
  * Utilisation de aws-sdk-php version 3+
- * Accès S3 : https://s3.console.aws.amazon.com/s3/home
- * Accès IAM : https://console.aws.amazon.com/iam/home
  */
 
 // Informations à remplacer
