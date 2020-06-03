@@ -12,7 +12,11 @@ Permet de crypter un mot de passe pour éviter d'afficher le mot de passe en cla
 Permet d'obtenir le chemin absolu d'où se trouve le fichier. Par exemple, mettre ce fichier dans le dossier htdocs de MAMP retournera : `Users/Example/Applications/MAMP/htdocs`. Pour plus d'infos : https://www.php.net/manual/fr/function.getcwd.php
 
 ### s3-aws-sdk-php
-Permet l'utilisation de aws-sdk-php version 3+ pour stocker des fichiers sur le service de stockage en ligne S3.
+Permet l'utilisation de aws-sdk-php version 3+ pour stocker des fichiers sur le service de stockage en ligne S3. Les credentials viennent du service IAM.
+
+Accès S3 : https://s3.console.aws.amazon.com/s3/home
+
+Accès IAM : https://console.aws.amazon.com/iam/home
 
 -Etape 1 : Installer composer en global
 ```
