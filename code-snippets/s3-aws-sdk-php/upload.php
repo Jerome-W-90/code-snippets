@@ -1,6 +1,7 @@
 <?php
 /**
  * Utilisation de aws-sdk-php version 3+
+ * Accès à la doc du sdk : https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html
  */
 
 require 'vendor/autoload.php';
