@@ -71,6 +71,8 @@ $listBuckets = $s3->listBuckets();
         <thead>
         <tr>
             <th>Fichier</th>
+            <th>Type de stockage</th>
+            <th>Taille</th>
             <th>Lien</th>
         </tr>
         </thead>
@@ -78,6 +80,8 @@ $listBuckets = $s3->listBuckets();
         <?php foreach ($listFiles as $file): ?>
             <tr>
                 <td><?php echo $file['Key']; ?></td>
+                <td><?php echo $file['StorageClass']; ?></td>
+                <td><?php echo $file['Size']; ?></td>
                 <td><a href="<?php echo $s3->getObjectUrl('test-sdk-aws', $file['Key']); ?>" target="_blank">Cliquer</a></td>
             </tr>
         <?php endforeach; ?>
