@@ -11,6 +11,27 @@ Permet de crypter un mot de passe pour éviter d'afficher le mot de passe en cla
 ### chemin_absolu.php
 Permet d'obtenir le chemin absolu d'où se trouve le fichier. Par exemple, mettre ce fichier dans le dossier htdocs de MAMP retournera : `Users/Example/Applications/MAMP/htdocs`. Pour plus d'infos : https://www.php.net/manual/fr/function.getcwd.php
 
+### s3-aws-sdk-php
+Permet l'utilisation de aws-sdk-php version 3+ pour stocker des fichiers sur le service de stockage en ligne S3.
+
+-Etape 1 : Installer composer en global
+```
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f5eff0d4b4e4c79ff1609dd1e613307e16318854d24ae64f26d17af3ef0bf7cfb710ca74755a') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+php -r "unlink('composer-setup.php');"
+
+composer
+```
+-Etape 2 : Télécharger le sdk php `composer require aws/aws-sdk-php`
+
+-Etape 3 : Remplacer les credentials, la region et le nom du bucket
+
+-Etape 4 : Cliquer sur "choisir un fichier" et valider l'envoi du fichier sur le bucket S3 d'AWS
+
 # Utilisation des scripts
 ### config-new-mac.sh 
 Ce script permet d'automatiser toute l'installation et la configuration sur un MacOS vierge, à savoir :
