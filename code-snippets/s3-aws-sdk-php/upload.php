@@ -4,7 +4,7 @@
  */
 
 // Informations à remplacer
-$bucket = 'A REMPLACER';
+$bucketName = 'A REMPLACER';
 $region = 'A REMPLACER';
 $key = 'A REMPLACER'; // service IAM
 $secret = 'A REMPLACER'; // service IAM
@@ -26,7 +26,7 @@ if(isset($_FILES['image'])){
     ]);
 
     $result = $s3->putObject([
-        'Bucket' => $bucket,
+        'Bucket' => $bucketName,
         'Key'    => $file_name,
         'SourceFile' => $temp_file_location
     ]);
@@ -34,7 +34,7 @@ if(isset($_FILES['image'])){
 
 // Liste des fichiers présents dans le bucket
 $listFiles = $s3->getIterator('ListObjects', [
-    'Bucket' => $bucket
+    'Bucket' => $bucketName
 ]);
 
 // Liste des buckets
@@ -51,6 +51,14 @@ $listBuckets = $s3->listBuckets();
     <title>AWS S3</title>
 </head>
 <body>
+    
+    <h3>Liste des buckets</h3>
+    <?php foreach ($listBuckets['Buckets'] as $bucket): ?>
+        <p><?php echo "{$bucket['Name']} - {$bucket['CreationDate']}\n"; ?></p>
+    <?php endforeach; ?>
+    <h5>Bucket utilisé : <span style="color:#ff0000;"><?php echo $bucketName; ?></span></h5>
+
+    <hr>
 
     <h3>Formulaire d'envoi d'un fichier sur le bucket</h3>
     <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
@@ -58,12 +66,6 @@ $listBuckets = $s3->listBuckets();
         <input type="submit"/>
     </form>
 
-    <hr>
-
-    <h3>Liste des buckets</h3>
-    <?php foreach ($listBuckets['Buckets'] as $bucket): ?>
-        <p><?php echo "{$bucket['Name']} - {$bucket['CreationDate']}\n"; ?></p>
-    <?php endforeach; ?>
     <hr>
 
     <h3>Liste des fichiers présents dans le bucket</h3>
