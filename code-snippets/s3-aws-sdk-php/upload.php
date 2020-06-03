@@ -62,7 +62,7 @@ $listBuckets = $s3->listBuckets();
 
     <h3>Liste des buckets</h3>
     <?php foreach ($listBuckets['Buckets'] as $bucket): ?>
-        <?php echo "{$bucket['Name']} - {$bucket['CreationDate']}\n"; ?>
+        <p><?php echo "{$bucket['Name']} - {$bucket['CreationDate']}\n"; ?></p>
     <?php endforeach; ?>
     <hr>
 
