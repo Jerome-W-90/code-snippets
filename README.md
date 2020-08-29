@@ -14,7 +14,7 @@ Permet d'obtenir le chemin absolu d'où se trouve le fichier. Par exemple, mettr
 ### pokemon-api
 Script basic qui utilise l'API de pokeapi : https://pokeapi.co
 
--Etape 1 : Installer composer en global (https://fast-code.herokuapp.com/items/composer)
+-Etape 1 : Installer composer en global (https://www.fast-code.dev/items/composer)
 
 -Etape 2 : Lancer composer `composer install`
 
@@ -26,7 +26,7 @@ Accès S3 : https://s3.console.aws.amazon.com/s3/home
 
 Accès IAM : https://console.aws.amazon.com/iam/home
 
--Etape 1 : Installer composer en global (https://fast-code.herokuapp.com/items/composer)
+-Etape 1 : Installer composer en global (https://www.fast-code.dev/items/composer)
 
 -Etape 2 : Télécharger le sdk php `composer require aws/aws-sdk-php`
 
