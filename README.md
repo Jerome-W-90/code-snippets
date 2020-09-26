@@ -18,7 +18,6 @@ Script basic qui utilise l'API de pokeapi : https://pokeapi.co
 
 -Etape 2 : Lancer composer `composer install`
 
-
 ### s3-aws-sdk-php
 Permet l'utilisation de aws-sdk-php version 3+ pour stocker des fichiers sur le service de stockage en ligne S3. Les credentials viennent du service IAM.
 
@@ -33,6 +32,10 @@ Accès IAM : https://console.aws.amazon.com/iam/home
 -Etape 3 : Remplacer les credentials, la region et le nom du bucket
 
 -Etape 4 : Cliquer sur "choisir un fichier" et valider l'envoi du fichier sur le bucket S3 d'AWS
+
+### datatable_en_francais
+La traduction complète de Datatable en Français.
+
 
 # Utilisation des scripts
 ### config-new-mac.sh 
